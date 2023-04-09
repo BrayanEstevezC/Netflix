@@ -3,20 +3,28 @@
     margin: 0%;
 }
 .body{
-    background: #141414;
     background-position: center;
     width: 100%;
     height: 100vh;
     display: block;
+    background: #141414;
+    
+}
+header{
+    z-index: 10;
+    position: fixed;
+    width: 100%;
+    transition: 1.2s;
+}
+.Activo{
+    background: rgb(20, 20, 20);
 }
 #Logo{
     cursor: pointer;
     margin: 0 40%  ;
     height: 1.3em;
 }
-.black{
-    background: rgb(20, 20, 20);
-}
+
 #navbarNav{
     margin-left:4.5% ;
 }
@@ -32,7 +40,137 @@
 .drop{
     margin-right:50%;
 }
-
-.btn{
-    font-size: 20rem;
+.show{
+    background: #141414;
+    margin-top: 1%;
 }
+/* Dependiendo de imagen de fondo */
+
+#hamburgesa{
+    border: solid #141414;
+}
+
+.zona{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(resurses/frist.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+.zona1{
+    background: #141414;
+    color: aliceblue;
+}
+
+.texto{
+    margin-left: 5%;
+}
+
+#Title{
+    width: 30%;
+}
+
+.pelicula{
+    font-size: 1.3rem;
+}
+
+#logo-title{
+    height: 6vh;
+    padding-right: 1% ;
+}
+.sinopsis,.btns{
+    width: 55%;
+}
+
+.fa-play{
+    font-size: 1.2rem;
+    margin-left: .4em;
+}
+.reproducir{
+    border:none;
+}
+#info{
+    background:rgba(109, 109, 110, 0.7);
+    color: aliceblue;
+}
+#info:hover{
+    background:rgba(72, 72, 73, 0.7);
+
+}
+.reproducir:hover{
+    background: rgb(194, 198, 201);
+}
+
+.cartelera{
+    width: 97%;
+}
+.card{
+    width: 99%;
+    background: transparent;
+}
+
+footer {
+    font-size: .90rem;
+    color: gray;
+}
+
+footer a {
+    color: aliceblue;
+    font-size: 1.5rem;
+}
+.code{
+    border: none;
+    background: rgb(20, 20, 20);
+    color: gray;
+    border: solid white 2px;
+}
+
+.code:hover{
+    color: aliceblue;
+}
+@media (max-width: 900px) {
+    .sinopsis,.btns{
+        width: 100%;
+    }
+}
+
+
+/* Carrusel */
+@media (max-width: 767px) {
+    .carousel-inner .carousel-item > div {
+        display: none;
+    }
+    .carousel-inner .carousel-item > div:first-child {
+        display: block;
+    }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+/* medium and up screens */
+@media (min-width: 768px) {
+    
+    .carousel-inner .carousel-item-end.active,
+    .carousel-inner .carousel-item-next {
+      transform: translateX(25%);
+    }
+    
+    .carousel-inner .carousel-item-start.active, 
+    .carousel-inner .carousel-item-prev {
+      transform: translateX(-25%);
+    }
+}
+
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start { 
+  transform: translateX(0);
+}
+
+
+
+/* Fin */
