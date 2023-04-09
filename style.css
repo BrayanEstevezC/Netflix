@@ -108,7 +108,42 @@ header{
 .card{
     width: 99%;
     background: transparent;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.2s ease-in-out;
 }
+
+.card-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .card:hover img {
+    transform: scale(1.2);
+  }
+  
+  .card:hover .card-content {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .fa-circle-play,.fa-circle-plus,.fa-thumbs-up,.fa-circle-chevron-down{
+    font-size: 1.5rem;
+  }
+  .descripcion{
+    font-size: .70rem;
+  }
+  .durarion{
+    font-size: 1rem;
+  }
 
 footer {
     font-size: .90rem;
