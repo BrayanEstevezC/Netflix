@@ -20,5 +20,3 @@ items.forEach((el) => {
     }
 })
 
-console.log("%c©️ Derechos reservados a Brayan Estevez Cardoso","Color:#F61AF0; font-size:2rem; font-weigth:bold;");
-console.log("%c https://github.com/BrayanEstevezC","font-size:1.3rem; font-weigth:bold;");
